@@ -11,7 +11,7 @@
   tasks:
     - name: Copying the war file to the destination
       copy: 
-        src: "/root/myweb/myweb-0.12.0.war"
+        remote_src: /root/myweb/myweb-0.12.0.war
         dest: "{{ tomcat_path }}/../webapps/"
 
     - name: ==> shutdown qle tomcat ,path = "{{ tomcat_path }}/bin/"
